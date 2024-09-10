@@ -1,0 +1,140 @@
+.mainContainer {
+    height: 100%;
+    margin: 2rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.your-projects {
+    width: 15%; 
+    height: 100rem;
+    padding: 2rem; 
+    background-color: #111827; 
+    color: #f9fafb; 
+    border-radius: 0 1rem 1rem 0; 
+}
+
+.your-projects-heading {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.25rem; 
+    color: #e5e7eb; 
+}
+
+.project-button {
+    padding-left: 1rem;  
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem; 
+    border-radius: 0.3125rem; 
+    background-color: #2f2f30;
+    color: white;
+    cursor: pointer; 
+    border: none;
+}
+
+.project-button:hover {
+    background-color: #a1a2a3;
+    color: #ffffff; 
+}
+.new-project{
+width: 35rem;
+margin-top: 4rem;
+}
+
+.new-project-buttons-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.new-project-button-cancel{
+    color: black;
+
+}
+
+.new-project-buttons-cancel:hover{
+    color: darkgrey;
+}
+
+.new-project-button-save{
+    background: black;
+    color: white;
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
+    padding: 0.5rem 1.5rem; /* px-6 py-2 */
+    border-radius: 5px;
+}
+
+.new-project-button-save:hover{
+color: darkgrey;
+}
+
+.input-class{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 1rem; 
+    margin-bottom: 1rem;  
+}
+
+.input-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6b7280;
+}
+
+.input-data {
+    /* width: 100%; */
+    padding: 0.25rem;
+    border-bottom-width: 2px;
+    border-radius: 0.125rem;
+    border-color: #d1d5db;
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+.input-data:focus {
+    outline: none;
+    border-color: #374151;
+}
+
+.noprojectselected-main{
+    margin-top: 6rem;
+    text-align: center;
+    width: 66%;
+
+}
+
+.noprojectsimg {
+    width: 4rem; /* 64 pixels */
+    height: 4rem; /* 64 pixels */
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .noproject-h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #6b7280;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+
+  dialog {
+    width: 300px;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+    
+    
