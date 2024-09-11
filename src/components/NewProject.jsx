@@ -1,7 +1,9 @@
 import Input from "./Input"
 import { useRef } from "react";
+import Modal from "./Modal";
 
-export default function NewProject({onAdd}){
+export default function NewProject({onAdd,onCancel}){
+    const modal=useRef();
     const title= useRef();
     const description= useRef();
     const dueDate= useRef();
@@ -11,6 +13,11 @@ export default function NewProject({onAdd}){
         const enteredDescription=description.current.value;
         const enteredDueDate=dueDate.current.value;
 
+        if(enteredTitle.trim()==='' || enteredDescription.trim()==="" || enteredDueDate.trim()===''){
+            modal.current.open();
+            return;
+        }
+
         onAdd({
             title: enteredTitle,
             description: enteredDescription,
@@ -19,9 +26,13 @@ export default function NewProject({onAdd}){
     }
 
 
-    return <div className="new-project">
+    return <>
+    <Modal ref={modal}>
+        
+    </Modal>
+        <div className="new-project">
         <menu className="new-project-buttons-container">
-            <button className="new-project-button-cancel" >Cancel</button>
+            <button className="new-project-button-cancel" onClick={onCancel}>Cancel</button>
             <button className={"new-project-button-save"} onClick={handleSave}>Save</button>
         </menu>
         <div>
@@ -30,4 +41,5 @@ export default function NewProject({onAdd}){
             <Input type='date' ref={dueDate} label="Due Date"/>
         </div>
     </div>
+    </>
 }

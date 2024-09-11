@@ -136,5 +136,144 @@ color: darkgrey;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-    
-    
+
+.project-new-list{
+    width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+    padding: 0.25rem 0.5rem; /* Padding: top-bottom 0.25rem, left-right 0.5rem */
+    border-radius: 0.125rem; /* Small rounded corners */
+    margin: 0.25rem 0; /* Top and bottom margin of 0.25rem */
+    background-color: transparent; /* Default background */
+    color: inherit; /* Default text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.project-new-list:hover {
+    background-color:white; /* Stone-800 equivalent (dark grayish-brown) */
+    color: black; /* Stone-200 equivalent (light grayish-brown) */
+}
+
+
+
+.dialog-modal {
+    background-color: white; /* Ensure the dialog itself is opaque */
+    padding: 1rem;
+    border-radius: 8px;
+}
+.project-container {
+    width: 35rem; /* 560px */
+    margin-top: 4rem; /* 64px (mt-16 in Tailwind) */
+  }
+  
+  .project-header {
+    padding-bottom: 1rem; /* 16px */
+    margin-bottom: 1rem; /* 16px */
+    border-bottom: 2px solid #d6d3d1; /* Equivalent to border-stone-300 */
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project-title {
+    font-size: 1.875rem; /* 3xl in Tailwind, 30px */
+    font-weight: bold;
+    color: #57534e; /* Equivalent to text-stone-600 */
+    margin-bottom: 0.5rem; /* 8px */
+  }
+  
+  .delete-button {
+    color: #57534e; /* Equivalent to text-stone-600 */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .delete-button:hover {
+    color: #1c1917; /* Equivalent to hover:text-stone-950 */
+  }
+  
+  .project-date {
+    margin-bottom: 1rem; /* 16px */
+    color: #a8a29e; /* Equivalent to text-stone-400 */
+  }
+  
+  .project-description {
+    color: #57534e; /* Equivalent to text-stone-600 */
+    white-space: pre-wrap; /* Keeps line breaks */
+  }
+  
+  .tasks-container {
+    margin-top: 20px;
+  }
+  
+  .tasks-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4b5563; /* Darker gray */
+    margin-bottom: 16px;
+  }
+  
+  .no-tasks-message {
+    color: #4b5563;
+    margin: 16px 0;
+  }
+  
+  .tasks-list {
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #f3f4f6; /* Light gray background */
+    list-style-type: none;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+  }
+  
+  .task-clear-button {
+    color: #4b5563; /* Dark gray */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .task-clear-button:hover {
+    color: #e3342f; /* Red on hover */
+  }
+  
+  .new-task-container {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Space between input and button */
+  }
+  
+  .task-input {
+    width: 256px; /* Equivalent to w-64 */
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #e5e7eb; /* Light gray background */
+    border: 1px solid #d1d5db; /* Slightly darker border */
+  }
+  
+  .add-task-button {
+    color: #374151; /* Dark gray */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .add-task-button:hover {
+    color: #1f2937; /* Darker gray on hover */
+  }
+  
